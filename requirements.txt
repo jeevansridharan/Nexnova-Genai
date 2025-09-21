@@ -1,4 +1,1 @@
-streamlit>=1.28.0
-datetime
-time
-random
+streamlit==1.47.0

@@ -1,5 +1,5 @@
 import streamlit as st
-import datetime
+from datetime import datetime
 import time
 import random
 
@@ -236,7 +236,7 @@ with col2:
                 
                 # Add to chat history
                 st.session_state.chat_history.append({
-                    'timestamp': datetime.datetime.now().strftime("%H:%M:%S"),
+                    'timestamp': datetime.now().strftime("%H:%M:%S"),
                     'prompt': prompt,
                     'response': response
                 })
@@ -245,7 +245,7 @@ with col2:
                 st.markdown('<div class="response-box">', unsafe_allow_html=True)
                 st.markdown("### 🤖 AI Response:")
                 st.markdown(response)
-                st.markdown(f"*Generated at {datetime.datetime.now().strftime('%H:%M:%S')} by Nexnova-GenAI-v1.0*")
+                st.markdown(f"*Generated at {datetime.now().strftime('%H:%M:%S')} by Nexnova-GenAI-v1.0*")
                 st.markdown('</div>', unsafe_allow_html=True)
         else:
             st.error("Please enter a prompt first!")
