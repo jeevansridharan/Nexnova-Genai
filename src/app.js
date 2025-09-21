@@ -12,11 +12,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
 app.get('/', (req, res) => {
-  res.json({
-    message: 'GenAI Hackathon Prototype API',
-    version: '1.0.0',
-    status: 'running'
-  });
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.get('/health', (req, res) => {
