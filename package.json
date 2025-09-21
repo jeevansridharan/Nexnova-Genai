@@ -1,0 +1,40 @@
+{
+  "name": "genai-hackathon-prototype",
+  "version": "1.0.0",
+  "description": "GenAI Exchange Hackathon Prototype Submission",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "jest",
+    "build": "webpack --mode production",
+    "deploy": "npm run build && npm run deploy:server"
+  },
+  "keywords": [
+    "genai",
+    "hackathon",
+    "ai",
+    "machine-learning",
+    "prototype"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "openai": "^4.0.0",
+    "axios": "^1.5.0",
+    "helmet": "^7.0.0",
+    "rate-limiter-flexible": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.6.4",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
